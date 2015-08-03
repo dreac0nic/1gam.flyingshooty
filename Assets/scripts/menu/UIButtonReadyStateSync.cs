@@ -26,7 +26,7 @@ public class UIButtonReadyStateSync : MonoBehaviour
 
 	public void Update()
 	{
-		CurrentLocalPlayer = UILobbyDelegate.LocalLobbyPlayer;
+		CurrentLocalPlayer = UILobbyManager.LocalLobbyPlayer;
 
 		if(SyncEveryFrame) {
 			SyncReadyState();
