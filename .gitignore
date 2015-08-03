@@ -60,3 +60,8 @@ desktop.ini*
 # fonts*
 # textures*
 # sprites*
+
+# ===================== #
+# Other Synchronization #
+# ===================== #
+.sync
