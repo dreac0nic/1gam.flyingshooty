@@ -8,7 +8,7 @@ public class SyncLobbyPlayerToLobbyDelegate : NetworkBehaviour
 
 	public override void OnStartClient()
 	{
-		m_PlayerListingEntry = UILobbyDelegate.AddToPlayerList(this.GetComponent<NetworkLobbyPlayer>());
+		m_PlayerListingEntry = UILobbyManager.AddToPlayerList(this.GetComponent<NetworkLobbyPlayer>());
 	}
 
 	public override void OnNetworkDestroy()
@@ -20,6 +20,6 @@ public class SyncLobbyPlayerToLobbyDelegate : NetworkBehaviour
 
 	public override void OnStartLocalPlayer()
 	{
-		UILobbyDelegate.LocalLobbyPlayer = this.GetComponent<NetworkLobbyPlayer>();
+		UILobbyManager.LocalLobbyPlayer = this.GetComponent<NetworkLobbyPlayer>();
 	}
 }
